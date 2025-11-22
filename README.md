@@ -1,0 +1,7 @@
+
+
+# Requirement
+
+- uv
+- pandoc
+

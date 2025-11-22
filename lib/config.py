@@ -1,6 +1,10 @@
+import os
 from pathlib import Path
 
-from attr import dataclass
+from dataclasses import dataclass
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 @dataclass
@@ -12,3 +16,6 @@ class Settings:
 
     # Pixels from the top to mask with white
     HEADER_HEIGHT = 55
+
+    # API key from Mistral AI
+    MISTRAL_API_KEY = os.environ.get('MISTRAL_API_KEY')
